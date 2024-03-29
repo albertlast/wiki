@@ -102,7 +102,7 @@ export async function init () {
   // Public Assets
   // ----------------------------------------
 
-  app.use(favicon(path.join(WIKI.ROOTPATH, 'assets', 'favicon.ico')))
+  // app.use(favicon(path.join(WIKI.ROOTPATH, 'assets', 'favicon.ico')))
   app.use('/_assets', express.static(path.join(WIKI.ROOTPATH, 'assets/_assets'), {
     index: false,
     maxAge: '7d'
